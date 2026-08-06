@@ -14,10 +14,7 @@ print("=" * 50)
 while True:
     student_name = input("Enter student name: ")
 
-    if student_name.strip() != "":
+    if student_name=="":
+        print ("Student name cannot be empty, Try again.")
+    else:
         break
-
-    print("Student name cannot be empty.")
-    print()
-
-print()
