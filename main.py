@@ -152,5 +152,38 @@ else:
     average_score = 0
 print(f"Average Score: {average_score}")
 print()
+# --------------------------------------------------
+# 5. CREATE ELIGIBILITY CONDITIONS
+# --------------------------------------------------
+print("=" * 50)
+print("              CREATE ELIGIBILITY CONDITIONS")
+print("=" * 50)
+graduation_eligible = (graduation_year >= 2025 and graduation_year <= 2027)
+attendance_eligible = attendance >= 75
+practice_count_eligible = attempted_days >= 6
+average_eligible = average_score >= 70
+critical_score_clear = not critical_score_found
+passed_days_eligible = passed_days >= 4
+project_completed = (project_input == "yes")
+profile_verified = (profile_input == "yes")
 
-
+placement_ready = (
+    graduation_eligible
+    and attendance_eligible
+    and practice_count_eligible
+    and average_eligible
+    and critical_score_clear
+    and passed_days_eligible
+    and project_completed
+    and profile_verified
+)
+print(graduation_eligible)
+print(attendance_eligible)
+print(practice_count_eligible)
+print(average_eligible)
+print(critical_score_clear)
+print(passed_days_eligible)
+print(project_completed)
+print(profile_verified)
+print(placement_ready)
+print()
