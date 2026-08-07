@@ -78,4 +78,23 @@ first_attempt_found = False
 critical_score_found = False
 first_critical_day = 0
 first_critical_score = 0
+#Process Seven Practice Days
+print("=" * 50)
+print("              PROCESS SEVEN PRACTICE DAYS")
+print("=" * 50)
+
+for day in range(1, 8):
+    while True:
+        score = int(input(f"Enter Day {day} score (0-100) or -1 for absent: "))
+        if score == -1 or (score >= 0 and score <= 100):
+            break
+        else:
+            print("Invalid score. Try again.")
+
+    if score == -1:
+        absent_days += 1
+        print(f"Day {day} Result: Absent")
+    else:
+        attempted_days += 1
+        total_score += score
 
