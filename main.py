@@ -28,3 +28,10 @@ while True:
         break
     else:
         print("Not eligible for placement.")
+#attendance validation
+while True:
+    attendance = float(input("Enter attendance percentage: "))
+    if attendance >= 0 and attendance <= 100:
+        break
+    else:
+        print("Invalid attendance. Enter a value between 0 and 100.")
