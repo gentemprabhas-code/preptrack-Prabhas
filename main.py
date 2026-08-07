@@ -35,3 +35,10 @@ while True:
         break
     else:
         print("Invalid attendance. Enter a value between 0 and 100.")
+#Project-Completion Input
+while True:
+    project_input = input("Has the student completed the required project? (yes/no): ").lower()
+    if project_input in ["yes", "no"]:
+        break
+    else:
+        print("Invalid input. Enter yes or no.")
