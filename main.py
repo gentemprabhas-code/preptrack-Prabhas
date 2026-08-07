@@ -187,3 +187,55 @@ print(project_completed)
 print(profile_verified)
 print(placement_ready)
 print()
+# ---------------------------------------------------------
+# 6. FINAL STATUS PRIORITY
+# ---------------------------------------------------------
+print("=" * 50)
+print("              FINAL STATUS PRIORITY")
+print("=" * 50)
+print()
+if attempted_days == 0:
+    final_status = "Practice Not Evaluated"
+    primary_blocker = "No practice was attempted"
+    next_action = "Attempt the required coding practices"
+elif critical_score_found:
+    final_status = "Critical Support Required"
+    primary_blocker = "A critical score exists"
+    next_action = "Revise the concepts from the first critical day"
+elif attempted_days < 6:
+    final_status = "Practice Incomplete"
+    primary_blocker = "Fewer than six practices were attempted"
+    next_action = "Complete at least six practice days"
+elif passed_days < 4:
+    final_status = "Insufficient Passed Practices"
+    primary_blocker = "Fewer than four practices were passed"
+    next_action = "Pass at least four coding practices"
+elif average_score < 70:
+    final_status = "Practice Improvement Required"
+    primary_blocker = "Average score is below 70"
+    next_action = "Improve the average score to at least 70"
+elif attendance < 75:
+    final_status = "Attendance Improvement Required"
+    primary_blocker = "Attendance is below 75"
+    next_action = "Improve attendance to at least 75 percent"
+elif not graduation_eligible:
+    final_status = "Graduation Criteria Not Met"
+    primary_blocker = "Graduation year is not eligible"
+    next_action = "Check the eligible graduation-year requirement"
+elif not project_completed:
+    final_status = "Application On Hold"
+    primary_blocker = "Project is incomplete"
+    next_action = "Complete the required project"
+elif not profile_verified:
+    final_status = "Application On Hold"
+    primary_blocker = "Profile is not verified"
+    next_action = "Complete profile verification"
+else:
+    final_status = "Ready for Mock Interview"
+    primary_blocker = "None"
+    next_action = "Proceed to placement mock interviews"
+    print(f"final_status: {final_status}")
+    print(f"primary_blocker: {primary_blocker}")
+    print(f"next_action: {next_action}")
+print()
+
