@@ -20,3 +20,11 @@ while True:
         break
 #registration_number validation
 registration_number = input("Enter registration number: ")
+#graduation_year
+while True:
+    graduation_year = int(input("Enter graduation year: "))
+    if graduation_year >= 2025 and graduation_year <= 2027:
+        print("Eligible for placement.")
+        break
+    else:
+        print("Not eligible for placement.")
