@@ -18,3 +18,5 @@ while True:
         print ("Student name cannot be empty, Try again.")
     else:
         break
+#registration_number validation
+registration_number = input("Enter registration number: ")
