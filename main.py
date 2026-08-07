@@ -239,3 +239,97 @@ else:
     print(f"next_action: {next_action}")
 print()
 
+# ---------------------------------------------------------
+# 7. FINAL REPORT
+# ---------------------------------------------------------
+print("=" * 50)
+print("              FINAL REPORT")
+print("=" * 50)
+print()
+if first_attempt_found:
+    highest_score_display = highest_score
+    highest_score_day_display = f"Day {highest_score_day}"
+    lowest_score_display = lowest_score
+    lowest_score_day_display = f"Day {lowest_score_day}"
+else:
+    highest_score_display = "Not Available"
+    highest_score_day_display = "Not Available"
+    lowest_score_display = "Not Available"
+    lowest_score_day_display = "Not Available"
+
+if critical_score_found:
+    first_critical_day_display = f"Day {first_critical_day}"
+    first_critical_score_display = first_critical_score
+    critical_score_found_display = "Yes"
+else:
+    first_critical_day_display = "Not Applicable"
+    first_critical_score_display = "Not Applicable"
+    critical_score_found_display = "No"
+
+project_completed_display = "Yes" if project_completed else "No"
+profile_verified_display = "Yes" if profile_verified else "No"
+print(f"attendance eligible: {attendance_eligible}")
+print(f"practice count eligible: {practice_count_eligible}")
+print(f"average eligible: {average_eligible}")
+print(f"critical score clear: {critical_score_clear}")
+print(f"passed days eligible: {passed_days_eligible}")
+print(f"project completed: {project_completed}")
+print(f"profile verified: {profile_verified}")
+print(f"placement ready: {placement_ready}")
+
+
+print("=" * 50)
+print("              PREPTRACK REPORT")
+print("=" * 50)
+print()
+
+print("STUDENT PROFILE")
+print()
+print(f"Student Name             : {student_name}")
+print(f"Registration Number      : {registration_number}")
+print(f"Graduation Year          : {graduation_year}")
+print(f"Attendance               : {attendance}")
+print(f"Project Completed        : {project_completed_display}")
+print(f"Profile Verified         : {profile_verified_display}")
+print()
+
+print("PRACTICE SUMMARY")
+print()
+print(f"Total Practice Days      : 7")
+print(f"Attempted Days           : {attempted_days}")
+print(f"Absent Days              : {absent_days}")
+print(f"Passed Days              : {passed_days}")
+print(f"Failed Days              : {failed_days}")
+print()
+print(f"Strong Days              : {strong_days}")
+print(f"Satisfactory Days        : {satisfactory_days}")
+print(f"Needs Improvement Days   : {improvement_days}")
+print(f"Critical Days            : {critical_days}")
+print()
+
+print("PERFORMANCE ANALYSIS")
+print()
+print(f"Total Score              : {total_score}")
+print(f"Average Score            : {round(average_score, 2)}")
+print(f"Highest Score            : {highest_score_display}")
+print(f"Highest Score Day        : {highest_score_day_display}")
+print(f"Lowest Score             : {lowest_score_display}")
+print(f"Lowest Score Day         : {lowest_score_day_display}")
+print()
+
+print("CRITICAL SCORE INFORMATION")
+print()
+print(f"Critical Score Found     : {critical_score_found_display}")
+print(f"First Critical Day       : {first_critical_day_display}")
+print(f"First Critical Score     : {first_critical_score_display}")
+print()
+
+print("FINAL DECISION")
+print()
+print(f"Final Status             : {final_status}")
+print(f"Primary Blocker          : {primary_blocker}")
+print(f"Next Action              : {next_action}")
+print()
+print("=" * 50)
+
+
