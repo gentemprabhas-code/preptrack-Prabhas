@@ -80,7 +80,7 @@ seven daily practice scores. A full report is printed at the end.
 ```
 Name: Prabhas Yadav
 
-Repository URL: <add your GitHub repository URL here>
+Repository URL: https://github.com/gentemprabhas-code/preptrack-Prabhas.git
 
 My main contribution: Designed and implemented the complete PrepTrack
 console application, including input validation, seven-day practice
@@ -116,7 +116,7 @@ displaying "Not Available" / "Not Applicable" text when appropriate.
 ## Feedback Received
 
 ```
-Reviewed By:
+Reviewed By: 
 
 Feedback Received:
 
