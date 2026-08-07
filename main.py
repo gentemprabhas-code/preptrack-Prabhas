@@ -111,3 +111,46 @@ for day in range(1, 8):
             classification = "Critical"
             critical_days += 1
         print(f"Day {day} Result: {classification}")
+
+        #Passed / Failed
+        if score >= 60:
+            passed_days += 1
+        else:
+            failed_days += 1
+
+        #Track highest and lowest
+        if not first_attempt_found:
+            highest_score = score
+            highest_score_day = day
+            lowest_score = score
+            lowest_score_day = day
+            first_attempt_found = True
+        else:
+            if score > highest_score:
+                highest_score = score
+                highest_score_day = day
+            if score < lowest_score:
+                lowest_score = score
+                lowest_score_day = day
+
+        #First critical score
+        if score < 40:
+            if not critical_score_found:
+                critical_score_found = True
+                first_critical_day = day
+                first_critical_score = score
+    print()
+# ---------------------------------------------------------
+# 4. CALCULATE THE AVERAGE
+# ---------------------------------------------------------
+print("=" * 50)
+print("              CALCULATE THE AVERAGE")
+print("=" * 50)
+if attempted_days > 0:
+    average_score = total_score / attempted_days
+else:
+    average_score = 0
+print(f"Average Score: {average_score}")
+print()
+
+
