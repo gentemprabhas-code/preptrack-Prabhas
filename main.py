@@ -97,4 +97,17 @@ for day in range(1, 8):
     else:
         attempted_days += 1
         total_score += score
-
+        #Classify the score
+        if score >= 75 and score <= 100:
+            classification = "Strong"
+            strong_days += 1
+        elif score >= 60 and score <= 74:
+            classification = "Satisfactory"
+            satisfactory_days += 1
+        elif score >= 40 and score <= 59:
+            classification = "Needs Improvement"
+            improvement_days += 1
+        else:
+            classification = "Critical"
+            critical_days += 1
+        print(f"Day {day} Result: {classification}")
